@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login / Signup - Fakultet</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="nav container">
+    <div><a href="index.html">Bosh sahifa</a></div>
+    <div class="links">
+      <a href="news.html">Yangiliklar</a>
+      <a href="about.html">Biz haqimizda</a>
+      <a href="contact.html">Kontakt</a>
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+  <main class="container">
+    <section class="card">
+      <h1>Login</h1>
+      <p id="loginMsg" class="muted"></p>
+      <form id="loginForm">
+        <input name="email" type="email" placeholder="Email" required>
+        <input name="password" type="password" placeholder="Parol" required>
+        <button type="submit">Kirish</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Ro'yxatdan o'tish</h2>
+      <p id="signupMsg" class="muted"></p>
+      <form id="signupForm">
+        <input name="fullName" type="text" placeholder="To'liq ism" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <input name="password" type="password" placeholder="Parol" required>
+        <button type="submit">Ro'yxatdan o'tish</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="container">&copy; <span id="year"></span> Fakultet News</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

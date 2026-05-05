@@ -1,0 +1,43 @@
+:root{
+  --bg-top: #f4fbf8;
+  --bg-bottom: #f7f8ff;
+  --card: #ffffff;
+  --text: #14222d;
+  --muted: #526371;
+  --accent: #0f8a7b;
+  --accent-2: #f28c28;
+  --accent-dark: #0b695d;
+  --border: #d6e4ec;
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=Manrope:wght@300;400;600;800&display=swap');
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color:var(--text);
+  background:linear-gradient(180deg,var(--bg-top),var(--bg-bottom));
+  -webkit-font-smoothing:antialiased;
+}
+.blur-circle{position:fixed;border-radius:50%;filter:blur(60px);opacity:.35;z-index:0}
+.blur-1{width:300px;height:300px;left:-100px;top:-80px;background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+.blur-2{width:260px;height:260px;right:-80px;bottom:-60px;background:linear-gradient(135deg,var(--accent-dark),#70b8a8)}
+.container{max-width:980px;margin:0 auto;padding:24px;position:relative;z-index:1}
+.nav{display:flex;gap:12px;align-items:center;justify-content:space-between;position:sticky;top:0;background:transparent;padding:12px 0}
+.nav .links{display:flex;gap:8px}
+.nav a{background:var(--card);padding:8px 14px;border-radius:999px;text-decoration:none;color:var(--accent-dark);border:1px solid var(--border);box-shadow:0 6px 18px rgba(16,32,40,0.06)}
+.hero{margin:24px 0;padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.7),rgba(255,255,255,0.5));box-shadow:0 6px 20px rgba(16,32,40,0.06);border:1px solid var(--border)}
+.card{background:var(--card);border-radius:14px;padding:18px;border:1px solid var(--border);box-shadow:0 8px 24px rgba(16,32,40,0.06);margin-bottom:16px}
+.news-item{padding:14px;border-radius:12px;background:linear-gradient(180deg, #fff, #fbfdff);border:1px solid var(--border)}
+.news-item + .news-item{margin-top:12px}
+.news-title{font-weight:700;font-family:'IBM Plex Serif', serif;color:var(--text)}
+.muted{color:var(--muted);font-size:0.95rem}
+form{display:flex;flex-direction:column;gap:10px}
+input[type=text],input[type=email],input[type=password],textarea{padding:10px;border-radius:10px;border:1px solid var(--border);font-size:1rem}
+button{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:none;cursor:pointer}
+.message-item{padding:12px;border-radius:12px;border:1px solid var(--border);background:#fff}
+footer{margin:28px 0;padding:12px;color:var(--muted);text-align:center}
+@media (max-width:760px){
+  .container{padding:16px}
+  .nav{flex-direction:column;align-items:flex-start}
+  .card{padding:12px}
+}

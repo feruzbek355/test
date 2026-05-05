@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontakt - Fakultet</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="nav container">
+    <div><a href="index.html">Bosh sahifa</a></div>
+    <div class="links">
+      <a href="news.html">Yangiliklar</a>
+      <a href="about.html">Biz haqimizda</a>
+      <a href="contact.html">Kontakt</a>
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+  <main class="container">
+    <section class="card">
+      <h1>Kontakt</h1>
+      <p id="contactMsg" class="muted"></p>
+      <form id="contactForm">
+        <textarea name="message" rows="4" required placeholder="Xabaringizni yozing..."></textarea>
+        <button type="submit">Xabar yuborish</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Foydalanuvchi xabarlari</h2>
+      <div id="messageList"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">&copy; <span id="year"></span> Fakultet News</div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
